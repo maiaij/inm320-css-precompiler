@@ -1,0 +1,20 @@
+{
+  "name": "inm320-css-precompiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "lite-server --baseDir=\"public\"",
+    "start": "concurrently \"npm run server\" \"npm run scsswatch\"",
+    "scsswatch": "sass --watch src/scss:public/assets/css"
+  },
+  "keywords": [],
+  "author": "Maia Johnson",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.79.5"
+  }
+}
